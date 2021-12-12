@@ -28,7 +28,24 @@ public class Director {
         stage.getIcons().add(new Image(this.getClass().getResource("/image/logo.png").toExternalForm()));
         stage.setResizable(false);
         stage.setScene(scene);
+        toIndex();
         stage.show();
 
     }
+
+    public void toIndex(){
+
+
+    }
+
+    public void  gameStart(){
+
+
+    }
+
+    public void gameOver(){
+
+    }
+
+
 }
