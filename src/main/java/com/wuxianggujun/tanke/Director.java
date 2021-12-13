@@ -1,5 +1,7 @@
 package com.wuxianggujun.tanke;
 
+import com.wuxianggujun.tanke.controller.IndexController;
+import com.wuxianggujun.tanke.scene.Index;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
@@ -12,6 +14,7 @@ public class Director {
     public static final double HEIGHT = 640;
 
     private static Director instance = new Director();
+    private Stage stage;
 
     private Director() {
 
@@ -28,13 +31,16 @@ public class Director {
         stage.getIcons().add(new Image(this.getClass().getResource("/image/logo.png").toExternalForm()));
         stage.setResizable(false);
         stage.setScene(scene);
+        stage.setWidth(WIDTH);
+        stage.setHeight(HEIGHT);
+        this.stage = stage;
         toIndex();
         stage.show();
 
     }
 
     public void toIndex(){
-
+        Index.load(stage);
 
     }
 

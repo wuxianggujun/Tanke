@@ -7,4 +7,8 @@ module com.wuxianggujun.tanke {
 
     opens com.wuxianggujun.tanke to javafx.fxml;
     exports com.wuxianggujun.tanke;
+    exports com.wuxianggujun.tanke.controller;
+    opens com.wuxianggujun.tanke.controller to javafx.fxml;
+    exports com.wuxianggujun.tanke.scene;
+    opens com.wuxianggujun.tanke.scene to javafx.fxml;
 }

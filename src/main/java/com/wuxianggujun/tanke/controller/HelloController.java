@@ -1,4 +1,4 @@
-package com.wuxianggujun.tanke;
+package com.wuxianggujun.tanke.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
