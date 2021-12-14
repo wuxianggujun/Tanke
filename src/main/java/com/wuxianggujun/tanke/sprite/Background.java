@@ -5,8 +5,8 @@ import javafx.scene.image.Image;
 
 public class Background extends Sprite{
 
-    public Background(Image image, double x, double y, double width, double height, GameScene gameScene) {
-        super(image, x, y, width, height, gameScene);
+    public Background() {
+        super(new Image("/image/LevelsBackground.jpg"), 0, 0, 960, 640);
     }
 
 }
