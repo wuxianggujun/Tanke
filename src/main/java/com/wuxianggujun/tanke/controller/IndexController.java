@@ -1,5 +1,6 @@
 package com.wuxianggujun.tanke.controller;
 
+import com.wuxianggujun.tanke.Director;
 import com.wuxianggujun.tanke.sound.SoundEffect;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
@@ -12,7 +13,8 @@ public class IndexController {
 
     @FXML
     void mouseClickedStartGame(MouseEvent event) {
-
+        SoundEffect.play("/sound/done.wav");
+        Director.getInstance().gameStart();
     }
 
     @FXML

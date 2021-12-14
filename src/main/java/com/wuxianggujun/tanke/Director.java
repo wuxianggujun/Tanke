@@ -1,14 +1,11 @@
 package com.wuxianggujun.tanke;
 
-import com.wuxianggujun.tanke.controller.IndexController;
 import com.wuxianggujun.tanke.scene.GameScene;
 import com.wuxianggujun.tanke.scene.Index;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
-import java.util.Objects;
 
 public class Director {
     public static final double WIDTH = 960;
@@ -41,17 +38,16 @@ public class Director {
 
     }
 
-    public void toIndex(){
+    public void toIndex() {
         Index.load(stage);
 
     }
 
-    public void  gameStart(){
-
-
+    public void gameStart() {
+        gameScene.init(stage);
     }
 
-    public void gameOver(){
+    public void gameOver() {
 
     }
 

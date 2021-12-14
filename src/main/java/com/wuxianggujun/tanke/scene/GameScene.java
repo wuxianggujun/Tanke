@@ -1,6 +1,7 @@
 package com.wuxianggujun.tanke.scene;
 
 import com.wuxianggujun.tanke.Director;
+import com.wuxianggujun.tanke.sprite.Background;
 import javafx.animation.AnimationTimer;
 import javafx.event.EventHandler;
 import javafx.scene.canvas.Canvas;
@@ -17,15 +18,17 @@ public class GameScene {
     private KeyProcess keyProcess = new KeyProcess();
     private Refresh refresh = new Refresh();
     private boolean running = false;
+    private Background background = new Background();
 
     private void paint() {
-
+        background.paint(graphicsContext);
     }
 
     public void init(Stage stage) {
         AnchorPane root = new AnchorPane(canvas);
         stage.getScene().setRoot(root);
         stage.getScene().setOnKeyPressed(keyProcess);
+        running = true;
         refresh.start();
 
     }
