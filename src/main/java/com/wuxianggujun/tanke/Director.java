@@ -1,6 +1,7 @@
 package com.wuxianggujun.tanke;
 
 import com.wuxianggujun.tanke.controller.IndexController;
+import com.wuxianggujun.tanke.scene.GameScene;
 import com.wuxianggujun.tanke.scene.Index;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -15,6 +16,7 @@ public class Director {
 
     private static Director instance = new Director();
     private Stage stage;
+    private GameScene gameScene = new GameScene();
 
     private Director() {
 
