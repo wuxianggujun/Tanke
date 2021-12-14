@@ -16,7 +16,7 @@ public class GameScene {
 
     private KeyProcess keyProcess = new KeyProcess();
     private Refresh refresh = new Refresh();
-    private boolean runing = false;
+    private boolean running = false;
 
     private void paint() {
 
@@ -39,7 +39,7 @@ public class GameScene {
 
         @Override
         public void handle(long l) {
-            if (runing) {
+            if (running) {
                 paint();
             }
         }
@@ -57,10 +57,10 @@ public class GameScene {
     }
 
     public void pauseOrContinue() {
-        if (runing) {
-            runing = false;
+        if (running) {
+            running = false;
         } else {
-            runing = true;
+            running = true;
         }
 
     }
